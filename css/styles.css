@@ -1,0 +1,63 @@
+
+.logo {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    position: relative;
+    left: 85px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+.position-relative {
+    display: flex;
+}
+
+.icons {
+    position: absolute;
+    right: 200px;
+    top: 0;
+    padding-top: 20px;
+}
+
+.iconos a {
+    margin-left: 15px;
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.2rem;
+    background-color: white;
+}
+
+.rectangle{
+    border: 2px solid black;
+    padding: 40px;
+    text-align: center;
+    font-size: 50px;
+    font-family:'Times New Roman', Times, serif;
+    margin: 30px;
+    justify-content: center;
+}
+
+.square {
+    position: relative;
+    left: 150px;
+    border: 2px solid black;
+    width: 50%;
+    height: 200px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.footer-section h5 {
+    font-weight: bold;
+}
+
+.footer-section a {
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
