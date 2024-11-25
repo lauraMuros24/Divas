@@ -1,0 +1,46 @@
+/* Estilos para la página 404 */
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+}
+
+.error-page {
+    text-align: center;
+}
+
+.error-code {
+    font-size: 10rem; /* Tamaño más grande para el "404" */
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.heart-icon {
+    color: #ff5e5e; /* Color del corazón */
+    font-size: 8rem;
+}
+
+.error-message {
+    font-size: 1.75rem;
+    color: #333;
+    margin-top: -20px;
+}
+
+.back-home-link {
+    font-size: 1.2rem;
+    color: #000000;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.back-home-link:hover {
+    color: #333;
+    text-decoration: none; /* Para quitar el subrayado al pasar el mouse */
+}

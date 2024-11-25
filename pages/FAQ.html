@@ -1,24 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Divas</title>
-    <link rel="stylesheet" href="../css/styles.css" />
-  </head>
-  <body>
-    <header>
-      <h1 class="marca">Divas</h1>
-      <nav class="navbar">
-        <a class="navbar-link" href="../index.html">Home</a>
-        <a class="navbar-link" href="./albumes.html">Albumes</a>
-        <a class="navbar-link" href="./login.html">Login</a>
-      </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas Frecuentes - Divas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/FAQ.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="container-fluid text-center py-3">
+        <div class="position-relative">
+            <h1 class="logo">Divas</h1>
+            <div class="iconos">
+                <a href="#"><i class="bi bi-heart"></i></a>
+                <a href="#"><i class="bi bi-cart"></i></a>
+                <a href="login.html"><i class="bi bi-person"></i></a>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                          <button> <a class="nav-link" href="../index.html">Home</a> </button> 
+                        </li>
+                        <li class="nav-item">
+                            <button><a class="nav-link" href="./productos.html">New in</a></button>
+                        </li>
+                        <li class="nav-item">
+                           <button><a class="nav-link" href="./productos.html">Productos</a></button> 
+                        </li>
+                        <li class="nav-item">
+                           <button><a class="nav-link" href="./FAQ.html">Preguntas frecuentes</a></button> 
+                        </li>
+                        <li class="nav-item">
+                            <button> <a class="nav-link" href="./404.html">Ofertas</a></button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
-    <main class="main-container"></main>
-    <footer>
-      <p>&copy; 2020 Musiquita</p>
-      <a href="./faq.html">FAQ</a>
+
+    <main class="container text-center my-4">
+        <h2 class="faq-title">PREGUNTAS FRECUENTES</h2>
+        <div class="accordion" id="accordionFAQ">
+
+            <!-- Pregunta 1 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        ¿Es posible cambiar mis artículos?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionFAQ">
+                    <div class="accordion-body">
+                        Sí, puedes cambiar tus artículos por otra talla o color si están disponibles. Para más detalles, contacta a nuestro servicio al cliente.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pregunta 2 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        ¿Cómo debo proceder para devolver un producto a la tienda online?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionFAQ">
+                    <div class="accordion-body">
+                        Para devolver un producto, ponte en contacto con nuestro equipo de soporte. Te indicaremos el proceso de devolución y los requisitos necesarios.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pregunta 3 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        ¿Qué plazo tengo disponible para hacer una devolución?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionFAQ">
+                    <div class="accordion-body">
+                        Tienes hasta 30 días desde la recepción de tu pedido para realizar una devolución.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pregunta 4 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        ¿Tengo que pagar algo por la devolución?
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionFAQ">
+                    <div class="accordion-body">
+                        Las devoluciones son gratuitas para envíos nacionales. Para envíos internacionales, el cliente es responsable de los costos de envío.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pregunta 5 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        ¿Cuándo recibo el reembolso del artículo devuelto?
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionFAQ">
+                    <div class="accordion-body">
+                        El reembolso se procesará entre 5 y 10 días hábiles después de recibir y verificar la devolución.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="container-fluid bg-light text-center py-4">
+        <div class="row footer-section">
+            <div class="col-md-3">
+                <h5>Atención al cliente</h5>
+                <a href="404.html"><p><i class="bi bi-whatsapp"></i> WhatsApp</p></a>
+                <a href="404.html"><p><i class="bi bi-envelope"></i> Email</p></a>
+            </div>
+            <div class="col-md-3">
+                <h5>Tienda online</h5>
+                <a href="FAQ.html"><p>Preguntas frecuentes</p></a>
+                <a href="404.html"><p>Medios de pago</p></a>
+                <a href="404.html"><p>Botón de arrepentimiento</p></a>
+            </div>
+            <div class="col-md-3">
+                <h5>Compra 100% segura</h5>
+                <p>Nuestro sitio tiene toda la seguridad para su compra.</p>
+            </div>
+            <div class="col-md-3">
+                <h5>Síguenos</h5>
+                <a href="404.html"><i class="bi bi-instagram"></i></a>
+                <a href="404.html"><i class="bi bi-facebook"></i></a>
+                <a href="404.html"><i class="bi bi-tiktok"></i></a>
+            </div>
+        </div>
     </footer>
-  </body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>

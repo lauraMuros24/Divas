@@ -56,13 +56,18 @@ header {
     border: 3px solid #000000; /* Color y grosor del borde */
     border-radius: 8px; /* Bordes redondeados */
 }
-
+.rectangulo a, .cuadrado a{
+    color: #000000;
+    text-decoration: none;
+}
 .rectangulo {
     width: 100%;
     height: 150px;
     background-color: #ffffff;
     margin: 15px 0;
     border-color: #0f0f0f; /* Borde del mismo color */
+    font-family: "DM Serif Display", serif;
+    font-size: 50px;
 }
 
 .cuadrado {
@@ -73,6 +78,7 @@ header {
     background-color: #fffefe;
     margin: 15px 0;
     border-color: #333; /* Borde del mismo color */
+    font-size: 30px;
 }
 
 
@@ -81,6 +87,32 @@ button {
     border: none;
     background: none;
 }
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px; /* Ajusta la distancia desde abajo */
+    right: 20px;  /* Ajusta la distancia desde la derecha */
+    z-index: 1000; /* Asegúrate de que esté siempre visible */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366; /* Color oficial de WhatsApp */
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-button img {
+    width: 35px;
+    height: 35px;
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
 
 /* Footer */
 footer {

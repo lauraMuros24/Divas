@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divas - Productos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/productos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+    </style>
+     <script src="../js/productos.js"></script>
+ <header class="container-fluid text-center py-3">
+    <div class="position-relative">
+        <h1 class="logo">Divas</h1>
+        <div class="iconos">
+            <a href="./404.html"><i class="bi bi-heart"></i></a>
+            <a href="./404.html"><i class="bi bi-cart"></i></a>
+            <a href=".//login.html"><i class="bi bi-person"></i></a>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <button> <a class="nav-link" href="../index.html">Home</a> </button> 
+                    </li>
+                    <li class="nav-item">
+                        <button><a class="nav-link" href="./productos.html">New in</a></button>
+                    </li>
+                    <li class="nav-item">
+                       <button><a class="nav-link" href="./productos.html">Productos</a></button> 
+                    </li>
+                    <li class="nav-item">
+                       <button><a class="nav-link" href="./FAQ.html">Preguntas frecuentes</a></button> 
+                    </li>
+                    <li class="nav-item">
+                        <button> <a class="nav-link" href="./404.html">Ofertas</a></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<main class="container">
+    <div class="row">
+        <aside class="col-md-3 filters">
+            <h3>Filtros</h3>
+            <div>
+                <strong>Categoría</strong>
+                <ul>
+                    <li><a href="#" onclick="filterProducts('new-in')">New in</a></li>
+                    <li><a href="#" onclick="filterProducts('Vestido')">Vestido</a></li>
+                    <li><a href="#" onclick="filterProducts('Pantalón')">Pantalón</a></li>
+                    <li><a href="#" onclick="filterProducts('Remera')">Remera</a></li>
+                    <li><a href="#" onclick="filterProducts('Oferta')">Oferta</a></li>
+                </ul>
+            </div>
+<div>
+    <strong>Talle</strong>
+    <ul>
+        <li><a href="#" onclick="filterBySize('XS')">XS</a></li>
+        <li><a href="#" onclick="filterBySize('S')">S</a></li>
+        <li><a href="#" onclick="filterBySize('M')">M</a></li>
+        <li><a href="#" onclick="filterBySize('L')">L</a></li>  
+    </ul>
+</div>
+<div>
+    <strong>Precio</strong>
+    <div>
+        <input type="text" id="price-min" placeholder="Desde">
+        <input type="text" id="price-max" placeholder="Hasta">
+        <button onclick="filterByPrice()">Filtrar</button>
+    </div>
+</div>
+
+        </aside>
+
+        <section class="col-md-9 product-list">
+            <h2 class="text-center">PRODUCTOS</h2>
+            <div class="row product-grid">
+                <div class="col-md-4 product-item" data-category="Remera new-in" data-size="M" data-price="15200">
+                    <img src="../assets/remeras/remera 1.png" alt="Remeron FunDays" class="img-fluid">
+                    <p class="product-name">Remeron FunDays</p>
+                    <p class="product-price">$15.200</p>
+                    <button class="btn btn-outline-dark" onclick="showDetails('Remeron FunDays', 'Descripción del producto.', '../assets/remeras/remera 1.png', '$15.200')">Ver más</button>
+                </div>
+                <div class="col-md-4 product-item" data-category="Remera new-in" data-size="S" data-price="7800">
+                    <img src="../assets/remeras/remera 2.png" alt="Remera FUNNY NIGHTS" class="img-fluid">
+                    <p class="product-name">Remera FUNNY NIGHTS</p>
+                    <p class="product-price">$7.800</p>
+                    <button class="btn btn-outline-dark" onclick="showDetails('Remera FUNNY NIGHTS', 'Descripción del producto.', '../assets/remeras/remera 2.png', '$7.800')">Ver más</button>
+                </div>
+                <div class="col-md-4 product-item" data-category="Remera" data-size="S" data-price="9750">
+                    <img src="../assets/remeras/remera 3 .png" alt="REMERA PEANUTS" class="img-fluid">
+                    <p class="product-name">REMERA PEANUTS</p>
+                    <p class="product-price">$9.750</p>
+                    <button class="btn btn-outline-dark" onclick="showDetails('REMERA PEANUTS', 'Descripción del producto.', '../assets/remeras/remera 3.png', '$9.750')">Ver más</button>
+                </div>
+                <div class="col-md-4 product-item" data-category="Remera new-in" data-size="XS" data-price="11625">
+                    <img src="../assets/remeras/remera 4.png" alt="REMERA HAMPTONS" class="img-fluid">
+                    <p class="product-name">REMERA HAMPTONS</p>
+                    <p class="product-price">$11.625</p>
+                    <button class="btn btn-outline-dark" onclick="showDetails('REMERA HAMPTONS', 'Descripción del producto.', '../assets/remeras/remera 4.png', '$11.625')">Ver más</button>
+                </div>
+                <div class="col-md-4 product-item" data-category="Remera" data-size="XS" data-price="15960">
+                    <img src="../assets/remeras/remera 5.png" alt="Remera Crop City" class="img-fluid">
+                    <p class="product-name">Remera Crop City</p>
+                    <p class="product-price">$15.960</p>
+                    <button class="btn btn-outline-dark" onclick="showDetails('Remera Crop City', 'Descripción del producto.', '../assets/remeras/remera 5.png', '$15.960')">Ver más</button>
+                </div>
+                <div class="col-md-4 product-item" data-category="Remera" data-size="M" data-price="11000">
+                    <img src="../assets/remeras/remera 6.png" alt="REMERON FLOW" class="img-fluid">
+                    <p class="product-name">REMERON FLOW</p>
+                    <p class="product-price">$11.000</p>
+                    <button class="btn btn-outline-dark" onclick="showDetails('REMERON FLOW', 'Descripción del producto.', '../assets/remeras/remera 6.png', '$11.000')">Ver más</button>
+                </div>
+                <div class="col-md-4 product-item" data-category="Remera new-in" data-size="L" data-price="14750">
+                    <img src="../assets/remeras/remera 7.png" alt="REMERON MYSTIC" class="img-fluid">
+                    <p class="product-name">REMERON MYSTIC</p>
+                    <p class="product-price">$14.750</p>
+                    <button class="btn btn-outline-dark" onclick="showDetails('REMERON MYSTIC', 'Descripción del producto.', '../assets/remeras/remera 7.png', '$14.750')">Ver más</button>
+                </div>
+                <div class="col-md-4 product-item" data-category="Remera new-in" data-size="S" data-price="18690">
+                    <img src="../assets/remeras/remera 8.png" alt="Polera Crop Niger" class="img-fluid">
+                    <p class="product-name">Polera Crop Niger</p>
+                    <p class="product-price">$18.690</p>
+                    <button class="btn btn-outline-dark" onclick="showDetails('Polera Crop Niger', 'Descripción del producto.', '../assets/remeras/remera 8.png', '$18.690')">Ver más</button>
+                </div>
+                <div class="col-md-4 product-item" data-category="Remera" data-size="L" data-price="9750">
+                    <img src="../assets/remeras/remera 9.png" alt="Remera Copacabana" class="img-fluid">
+                    <p class="product-name">Remera Copacabana</p>
+                    <p class="product-price">$9.750</p>
+                    <button class="btn btn-outline-dark" onclick="showDetails('Remera Copacabana', 'Descripción del producto.', '../assets/remeras/remera 9.png', '$9.750')">Ver más</button>
+                </div>
+                <div class="col-md-4 product-item" data-category="Remera" data-size="M" data-price="13500">
+                    <img src="../assets/remeras/remera 10.png" alt="Remeron Waikiki" class="img-fluid">
+                    <p class="product-name">Remeron Waikiki</p>
+                    <p class="product-price">$13.500</p>
+                    <button class="btn btn-outline-dark" onclick="showDetails('Remeron Waikiki', 'Descripción del producto.', '../assets/remeras/remera 10.png', '$13.500')">Ver más</button>
+                </div>
+                <div class="col-md-4 product-item" data-category="Vestido" data-size="XS" data-price="14100">
+                    <img src="../assets/vestido 1.png" alt="Vestido Shine" class="img-fluid">
+                    <p class="product-name">Vestido Shine</p>
+                    <p class="product-price">$14.100</p>
+                    <button class="btn btn-outline-dark" onclick="showDetails('Vestido Shine', 'Descripción del producto.', '../assets/vestido 1.png', '$14.100')">Ver más</button>
+                </div>
+                <div class="col-md-4 product-item" data-category="Vestido new-in" data-size="S" data-price="19000">
+                    <img src="../assets/vestido 2.png" alt="Vestido Batik Heart Shine" class="img-fluid">
+                    <p class="product-name">Vestido Batik Heart Shine</p>
+                    <p class="product-price">$19.000</p>
+                    <button class="btn btn-outline-dark" onclick="showDetails('Vestido Batik Heart Shine', 'Descripción del producto.', '../assets/vestido 2.png', '$19.000')">Ver más</button>
+                </div>
+                <div class="col-md-4 product-item" data-category="Vestido" data-size="S" data-price="32400">
+                    <img src="../assets/vestido 3.png" alt="Vestido Volados" class="img-fluid">
+                    <p class="product-name">Vestido Volados</p>
+                    <p class="product-price">$32.400</p>
+                    <button class="btn btn-outline-dark" onclick="showDetails('Vestido Volados', 'Descripción del producto.', '../assets/vestido 3.png', '$32.400')">Ver más</button>
+                </div>
+                <div class="col-md-4 product-item" data-category="Vestido new-in" data-size="S" data-price="25100">
+                    <img src="../assets/vestido 4.png" alt="Vestido Beachtime" class="img-fluid">
+                    <p class="product-name">Vestido Beachtime</p>
+                    <p class="product-price">$25.100</p>
+                    <button class="btn btn-outline-dark" onclick="showDetails('Vestido Beachtime', 'Descripción del producto.', '../assets/vestido 4.png', '$25.100')">Ver más</button>
+                </div>
+                <div class="col-md-4 product-item" data-category="Pantalón" data-size="M" data-price="24150">
+                    <img src="../assets/pantalones/pantalon 1.png" alt="Babucha Follow Me" class="img-fluid">
+                    <p class="product-name">Babucha Follow</p>
+                        <p class="product-price">$25.100</p>
+                        <button class="btn btn-outline-dark" onclick="showDetails('Babucha Follow', 'Descripción del producto.', '../assets/pantalones/ pantalon 2.png', '$25.100')">Ver más</button>
+                    </div>
+            
+ <div class="col-md-4 product-item" data-category="Pantalón" data-size="L" data-price="24150">
+        <img src="../assets/pantalones/pantalon 2.png" alt="Babucha FRISA VINTAGE" class="img-fluid">
+        <p class="product-name">Babucha FRISA VINTAGE</p>
+        <p class="product-price">$24.150</p>
+        <button class="btn btn-outline-dark" onclick="showDetails('Babucha FRISA VINTAGE', 'Descripción del producto.', '../assets/pantalones/pantalon 2.png', '$24.150')">Ver más</button>
+    </div>
+    <div class="col-md-4 product-item" data-category="Pantalón" data-size="S" data-price="18125">
+        <img src="../assets/pantalones/pantalon 3.png" alt="Babucha Batik" class="img-fluid">
+        <p class="product-name">Babucha Batik</p>
+        <p class="product-price">$18.125</p>
+        <button class="btn btn-outline-dark" onclick="showDetails('Babucha Batik', 'Descripción del producto.', '../assets/pantalones/pantalon 3.png', '$18.125')">Ver más</button>
+    </div>
+    <div class="col-md-4 product-item" data-category="Pantalón new-in" data-size="S" data-price="21000">
+        <img src="../assets/pantalones/pantalon 4.png" alt="Jean Maria Colours" class="img-fluid">
+        <p class="product-name">Jean Maria Colours</p>
+        <p class="product-price">$21.000</p>
+        <button class="btn btn-outline-dark" onclick="showDetails('Jean Maria Colours', 'Descripción del producto.', '../assets/pantalones/pantalon 4.png', '$21.000')">Ver más</button>
+    </div>
+    <div class="col-md-4 product-item" data-category="Pantalón new-in" data-size="L" data-price="50190">
+        <img src="../assets/pantalones/pantalon 5.png" alt="Jean Super Wide Black Rotos" class="img-fluid">
+        <p class="product-name">Jean Super Wide Black Rotos</p>
+        <p class="product-price">$50.190</p>
+        <button class="btn btn-outline-dark" onclick="showDetails('Jean Super Wide Black Rotos', 'Descripción del producto.', '../assets/pantalones/pantalon 5.png', '$50.190')">Ver más</button>
+    </div>
+    <div class="col-md-4 product-item" data-category="Pantalón new-in" data-size="M" data-price="49350">
+        <img src="../assets/pantalones/pantalon 6.png" alt="Jean Super Wide Blue" class="img-fluid">
+        <p class="product-name">Jean Super Wide Blue</p>
+        <p class="product-price">$49.350</p>
+        <button class="btn btn-outline-dark" onclick="showDetails('Jean Super Wide Blue', 'Descripción del producto.', '../assets/pantalones/pantalon 6.png', '$49.350')">Ver más</button>
+    </div>
+    <div class="col-md-4 product-item" data-category="Pantalón" data-size="XS" data-price="39375">
+        <img src="../assets/pantalones/pantalon 7.png" alt="Pantalon Rock Tajos" class="img-fluid">
+        <p class="product-name">Pantalon Rock Tajos</p>
+        <p class="product-price">$39.375</p>
+        <button class="btn btn-outline-dark" onclick="showDetails('Pantalon Rock Tajos', 'Descripción del producto.', '../assets/pantalones/pantalon 7.png', '$39.375')">Ver más</button>
+    </div>
+    <div class="col-md-4 product-item" data-category="Pantalón" data-size="S" data-price="39375">
+        <img src="../assets/pantalones/pantalon 8.png" alt="Pantalon Rock" class="img-fluid">
+        <p class="product-name">Pantalon Rock</p>
+        <p class="product-price">$39.375</p>
+        <button class="btn btn-outline-dark" onclick="showDetails('Pantalon Rock', 'Descripción del producto.', '../assets/pantalones/pantalon 8.png', '$39.375')">Ver más</button>
+    </div>
+</div>
+
+            </div>
+        </section>
+    </div>
+</main>
+
+    <!-- Footer -->
+    <footer>
+        <div>
+            <strong>Atención al cliente</strong><br>
+            WhatsApp<br>Email
+        </div>
+        <div>
+            <strong>Tienda online</strong><br>
+            Preguntas frecuentes<br>Medios de pago<br>Botón de arrepentimiento
+        </div>
+        <div>
+            <strong>Compra 100% segura</strong><br>
+            Nuestro sitio tiene toda la seguridad para su compra.
+        </div>
+        <div>
+            <strong>Seguinos</strong><br>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-tiktok"></i>
+        </div>
+    </footer>
+    
+    <script>
+    function filterProducts(category) {
+    const products = document.querySelectorAll('.product-item');
+    products.forEach(product => {
+        const productCategory = product.getAttribute('data-category');
+
+        if (category === 'all' || productCategory.includes(category)) {
+            product.style.display = 'block';
+        } else {
+            product.style.display = 'none';
+        }
+    });
+}
+
+    </script>
+
+    
+</body>
+</html>
