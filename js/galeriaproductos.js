@@ -22,6 +22,7 @@ function filtradotarjetas(filtro){
 } 
 }
 
+
 function showDetails(id){
     window.location= "./producto.html?id="+ id
 }
